@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irfan Saeed</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --text: #f5f5f5;
+    --muted: #9a9a9a;
+    --accent: #ff8a00;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 24px;
+  }
+
+  .card {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 28px;
+    display: block;
+    box-shadow: 0 0 0 4px var(--card), 0 0 40px rgba(255, 138, 0, 0.15);
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+
+  a.link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  a.link:hover {
+    border-color: var(--accent);
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: #0a0a0a;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="assets/photo.png" alt="Photo of Irfan Saeed" class="photo">
+    <h1>Hey, my name is Irfan Saeed.</h1>
+    <p>I design things and I'm learning to build with Claude Code.</p>
+    <a class="btn" href="https://www.upwork.com/freelancers/saeeduxdesign" target="_blank" rel="noopener noreferrer">View my Upwork profile</a>
+  </div>
+</body>
+</html>
